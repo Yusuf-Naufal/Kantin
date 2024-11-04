@@ -20,13 +20,15 @@ return new class extends Migration
             $table->unsignedBigInteger('id_unit')->nullable();
             $table->unsignedBigInteger('id_outlet')->nullable();
             // Detail Produk
-            $table->string('harga_beli')->nullable();
-            $table->string('harga_jual')->nullable();
+            $table->double('harga_modal')->nullable();
+            $table->double('harga_jual')->nullable();
+            $table->double('harga_diskon')->nullable();
             $table->string('stok')->nullable();
             $table->string('stok_minimum')->nullable();
             $table->string('foto')->nullable();
             $table->bigInteger('diskon')->nullable();
             $table->string('deskripsi')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
         });
     }

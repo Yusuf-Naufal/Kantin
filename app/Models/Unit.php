@@ -20,5 +20,10 @@ class Unit extends Model
     {
         return $this->hasMany(Produk::class, 'id_unit');
     }
+    
+    public function Outlet()
+    {
+        return $this->belongsTo(Outlet::class, 'id_outlet');
+    }
 }
 

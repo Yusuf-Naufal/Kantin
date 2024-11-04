@@ -13,8 +13,10 @@ return new class extends Migration
     {
         Schema::create('detail_transaksi', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_transaksi')->constrained()->onDelete('cascade');
-            $table->foreignId('id_produk')->constrained()->onDelete('cascade');
+            $table->unsignedBigInteger('id_transaksi')->nullable();
+            $table->unsignedBigInteger('id_produk')->nullable();
+            $table->string('status')->nullable();
+            $table->bigInteger('diskon')->nullable();
             $table->bigInteger('jumlah_barang');
             $table->double('subtotal')->nullable();
             $table->double('keuntungan')->nullable();

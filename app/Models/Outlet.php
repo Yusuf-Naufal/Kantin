@@ -15,7 +15,7 @@ class Outlet extends Model
         'nama_outlet',
         'alamat',
         'no_telp',
-        'id_user',
+        'pemilik',
         'email',
         'instagram',
         'nama_outlet',
@@ -26,12 +26,14 @@ class Outlet extends Model
         'jam_buka',
         'jam_tutup',
         'status',
+        'pin',
+        'uid',
     ];
 
     // Relasi dengan User
     public function User()
     {
-        return $this->hasMany(User::class, 'id_user');
+        return $this->hasMany(User::class, 'id_outlet');
     }
 
     // Relasi dengan Transaksi
@@ -43,7 +45,15 @@ class Outlet extends Model
     // Relasi dengan Produk
     public function Produk()
     {
-        return $this->hasMany(Produk::class, 'id_produk');
+        return $this->hasMany(Produk::class, 'id_outlet');
+    }
+    public function Kategori()
+    {
+        return $this->hasMany(Kategori::class, 'id_outlet');
+    }
+    public function Unit()
+    {
+        return $this->hasMany(Unit::class, 'id_outlet');
     }
 
 

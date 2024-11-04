@@ -17,7 +17,7 @@ return new class extends Migration
             $table->unsignedBigInteger('id_outlet')->nullable();
             $table->timestamps();
 
-            $table->foreign('id_outlet')->references('id')->on('outlet')->onDelete;
+
         });
     }
 

@@ -13,23 +13,24 @@ return new class extends Migration
     {
         Schema::create('outlet', function (Blueprint $table) {
             $table->id();
+            $table->string('uid')->nullable();
             // Outlet
-            $table->foreignId('id_outlet')->
+            $table->string('nama_outlet')->nullable();
             $table->string('alamat');
             $table->string('no_telp');
-            $table->unsignedInteger('id_user')->nullable();
-            $table->string('email')->nullable();
+            $table->string('pemilik');
+            $table->string('email')->unique()->nullable();
             $table->string('instagram')->nullable();
             $table->string('facebook')->nullable();
             $table->string('tiktok')->nullable();
             // Detail Outlet
             $table->string('foto')->nullable();
             $table->string('deskripsi')->nullable();
-            $table->string('jam_buka')->nullable();
-            $table->string('jam_tutup')->nullable();
+            $table->time('jam_buka')->nullable();
+            $table->time('jam_tutup')->nullable();
             $table->string('status')->nullable();
+            $table->string('pin')->nullable();
 
-            $table->foreign('id_user')->references('id')->on('users')->ondelete;
             $table->timestamps();
         });
     }

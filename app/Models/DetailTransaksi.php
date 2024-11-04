@@ -17,6 +17,8 @@ class DetailTransaksi extends Model
         'jumlah_barang',
         'subtotal',
         'keuntungan',  
+        'status',  
+        'diskon',  
     ];
 
     // Relasi dengan Transaksi

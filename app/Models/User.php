@@ -2,12 +2,12 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use HasFactory, Notifiable;
 
@@ -38,13 +38,15 @@ class User extends Authenticatable
     // Relasi dengan Outlet
     public function Outlet()
     {
-        return $this->belongsTo(Outlet::class, 'id_outlet');
+        return $this->belongsTo(Outlet::class,'id_outlet');
     }
+    
     // Relasi dengan Pengajuan
     public function Pengajuan()
     {
         return $this->hasMany(Pengajuan::class, 'id_user');
     }
+
 
 
     /**

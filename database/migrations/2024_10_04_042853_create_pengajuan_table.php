@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('pengajuan', function (Blueprint $table) {
             $table->id();
             // Pengaju
-            $table->foreignId('id_user')->constrained()->onDelete('cascade');
+            $table->unsignedBigInteger('id_user')->nullable();
             // Outlet
             $table->string('nama_outlet')->nullable();
             $table->string('alamat');
@@ -26,6 +26,7 @@ return new class extends Migration
             // Detail Outlet
             $table->string('foto')->nullable();
             $table->string('deskripsi')->nullable();
+            $table->string('pin')->nullable();
             $table->string('jam_buka')->nullable();
             $table->string('jam_tutup')->nullable();
             $table->string('status')->nullable()->default('Pending');

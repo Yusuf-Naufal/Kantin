@@ -19,24 +19,32 @@ class Order extends Model
         'tanggal_order',
         'alamat_tujuan',
         'jam_ambil',
+        'metode',
         'pembayaran',
         'total_belanja',
-        'ongkir',
         'total_barang',
         'total_keuntungan',
         'status',
         'catatan',
+        'latitude',
+        'longitude',
     ];
 
     // Relasi dengan Outlet
     public function Outlet()
     {
-        return $this->belongsTo(Outlet::class, foreignKey: 'id_outlet');
+        return $this->belongsTo(Outlet::class,  'id_outlet');
     }
 
     // Relasi dengan Detail Order
     public function DetailOrder()
     {
-        return $this->hasMany(DetailOrder::class, foreignKey: 'id_order');
+        return $this->hasMany(DetailOrder::class,  'id_order');
     }
+
+    public function Produk()
+    {
+        return $this->belongsTo(Produk::class, 'id_produk');
+    }
+
 }

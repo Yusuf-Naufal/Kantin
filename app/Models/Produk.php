@@ -20,11 +20,13 @@ class Produk extends Model
         'id_outlet',
         'harga_beli',
         'harga_jual',
+        'harga_diskon',
         'stok',
         'stok_minimum',
         'foto',
         'diskon',
         'deskripsi',
+        'status',
     ];
 
     // Relasi dengan Kategori
@@ -46,5 +48,10 @@ class Produk extends Model
     public function DetailTransaksi()
     {
         return $this->hasMany(DetailTransaksi::class, 'id_produk');
+    }
+
+    public function DetailOrder()
+    {
+        return $this->hasMany(DetailOrder::class, 'id_produk');
     }
 }

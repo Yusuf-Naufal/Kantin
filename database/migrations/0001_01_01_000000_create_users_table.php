@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('uid')->default(1)->nullable();
+            $table->string('uid')->nullable();
             // Login 
             $table->string('username')->nullable();
             $table->string('email')->unique();
@@ -29,13 +29,11 @@ return new class extends Migration
             $table->string('foto')->nullable();
             // Data Pekerjaan
             $table->string('role')->nullable();
-            $table->string('id_outlet')->nullable();
+            $table->unsignedBigInteger('id_outlet')->nullable();
             $table->string('catatan')->nullable();
+            $table->string('status')->nullable();
             $table->rememberToken();
             $table->timestamps();
-
-            // Foreign Key
-            $table->foreign('id_outlet')->references('id')->on('outlets');
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
