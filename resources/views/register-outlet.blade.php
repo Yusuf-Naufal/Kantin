@@ -46,7 +46,7 @@
                     <div class="flex gap-6 flex-col md:flex-row">
                         <div class="flex flex-col items-center w-auto h-64 md:w-64 md:h-64">
                             <label for="dropzone-file" class="flex flex-col items-center justify-center w-full h-full border-2 border-dashed rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100">
-                                <img class="w-full h-full rounded-md" id="image-update" src="{{ Storage::url('assets/' . $pengajuan->foto) }}" alt="">
+                                <img class="w-full h-full rounded-md" id="image-update" src="{{ Storage::url('app/public/assets/' . $pengajuan->foto) }}" alt="">
                             </label>
                         </div>
 

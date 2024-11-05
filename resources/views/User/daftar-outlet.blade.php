@@ -23,7 +23,7 @@
                         <div class="flex gap-4 items-start justify-start flex-col md:flex-row">
                             {{-- Gambar Outlet --}}
                             <div class="flex-shrink-0">
-                                <img src="{{ Storage::url('assets/' . $outlet->foto) }}" alt="{{ $outlet->nama_outlet }}" class="w-max md:w-24 h-24 rounded-lg object-cover border border-gray-200 dark:border-gray-600">
+                                <img src="{{ Storage::url('app/public/assets/' . $outlet->foto) }}" alt="{{ $outlet->nama_outlet }}" class="w-max md:w-24 h-24 rounded-lg object-cover border border-gray-200 dark:border-gray-600">
                             </div>
                             <div>
                                 <h3 class="text-xl font-semibold text-gray-800 dark:text-white">{{ $outlet->nama_outlet }}</h3>
@@ -44,7 +44,7 @@
                         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
                             @forelse($outlet->Produk as $produk)
                                 <div class="bg-white dark:bg-gray-800 border border-gray-200 rounded-lg shadow-md transition-transform duration-300 ease-in-out transform hover:scale-105">
-                                    <img src="{{ Storage::url('assets/' . $produk->foto) }}" alt="{{ $produk->nama_produk }}" class="w-full h-32 object-cover rounded-t-lg">
+                                    <img src="{{ Storage::url('app/public/assets/' . $produk->foto) }}" alt="{{ $produk->nama_produk }}" class="w-full h-32 object-cover rounded-t-lg">
                                     <div class="p-2">
                                         <h5 class="text-sm font-semibold text-gray-800 dark:text-white truncate mt-2">{{ $produk->nama_produk }}</h5>
                                         <p class="text-xs text-gray-500 dark:text-gray-300">Harga: Rp. {{ number_format($produk->harga_jual, 0, ',', '.') }}</p>

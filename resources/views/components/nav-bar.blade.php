@@ -13,7 +13,7 @@
                 <button type="button" class="flex text-sm bg-gray-800 dark:bg-gray-600 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600" id="user-menu-button" aria-expanded="false" data-dropdown-toggle="user-dropdown" data-dropdown-placement="bottom">
                     <span class="sr-only">Open user menu</span>
                     @if (auth()->user()->foto && Storage::exists('assets/' . auth()->user()->foto))
-                            <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ Storage::url('assets/' . auth()->user()->foto) }}" alt="User">
+                            <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ Storage::url('app/public/assets/' . auth()->user()->foto) }}" alt="User">
                         @else
                             @if (auth()->user()->jenis_kelamin === 'Laki-laki')
                                 <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ asset('public/assets/icon-male.png') }}" alt="User">

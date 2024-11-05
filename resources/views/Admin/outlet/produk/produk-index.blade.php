@@ -90,7 +90,7 @@
                         <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                             <a target="_blank" class="w-4 h-4">
                                 @if ($produk->foto && Storage::exists('assets/' . $produk->foto))
-                                    <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ Storage::url('assets/' . $produk->foto) }}" alt="Produk">
+                                    <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ Storage::url('app/public/assets/' . $produk->foto) }}" alt="Produk">
                                 @else
                                     <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ asset('public/assets/produk.png') }}" alt="Produk">
                                 @endif

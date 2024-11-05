@@ -89,7 +89,7 @@
                 <div class="space-y-4 overflow-y-auto" style="max-height: 400px;">
                     @forelse ($produks as $produk)
                         <div class="flex items-center gap-3 p-4 bg-gray-100 dark:bg-gray-700 rounded-lg shadow transition hover:bg-gray-200 dark:hover:bg-gray-600 order-item"> <!-- Added order-item class -->
-                            <img src="{{ Storage::url('assets/'. $produk->foto) }}" alt="Produk Image" class="w-16 h-16 object-cover rounded-md shadow-md">
+                            <img src="{{ Storage::url('app/public/assets/'. $produk->foto) }}" alt="Produk Image" class="w-16 h-16 object-cover rounded-md shadow-md">
                             
                             <div class="ml-4 flex-1">
                                 <h3 class="text-md font-semibold text-gray-800 dark:text-gray-200">{{ $produk->nama_produk }}</h3>

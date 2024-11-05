@@ -19,7 +19,7 @@
         <div id="product-list" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             @forelse($produks as $produk)
                 <a href="{{ route('order-produk', $produk->Outlet->uid) }}" class="p-4 border border-gray-300 rounded-lg bg-gray-50 dark:bg-gray-700 transition duration-300 ease-in-out hover:shadow-lg">
-                    <img src="{{ Storage::url('assets/' . $produk->foto) }}" alt="{{ $produk->nama_produk }}" class="w-full h-40 object-fill rounded-lg mb-4">
+                    <img src="{{ Storage::url('app/public/assets/' . $produk->foto) }}" alt="{{ $produk->nama_produk }}" class="w-full h-40 object-fill rounded-lg mb-4">
                     <h3 class="text-lg font-semibold text-gray-800 dark:text-white">{{ $produk->nama_produk }}</h3>
                     <p class="text-sm text-gray-600 dark:text-gray-300">Dari: {{ $produk->outlet->nama_outlet }}</p> 
                     <p class="text-xs text-gray-500 dark:text-gray-300">Harga: Rp. {{ number_format($produk->harga_jual, 0, ',', '.') }}</p>

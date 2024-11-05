@@ -3,7 +3,7 @@
 
         {{-- KETERANGAN OUTLET --}}
         <div class="flex flex-col md:flex-row gap-6 rounded-lg p-3 border border-gray-200">
-            <img class="w-full md:w-1/3 h-48 object-cover rounded-lg" src="{{ Storage::url('assets/'. $outlet->foto) }}" alt="Outlet">
+            <img class="w-full md:w-1/3 h-48 object-cover rounded-lg" src="{{ Storage::url('app/public/assets/'. $outlet->foto) }}" alt="Outlet">
 
             {{-- Detail Outlet --}}
             <div class="flex flex-col justify-between w-full">
@@ -97,7 +97,7 @@
                                             <p class="text-gray-400 font-bold text-lg mt-2">Rp. {{ number_format($produk->harga_jual, 0, ',', '.') }}</p>
                                         </div>
                                         <div class="flex-shrink-0">
-                                            <img src="{{ Storage::url('assets/'. $produk->foto) }}" alt="Produk" class="h-20 w-20 rounded-lg object-cover border border-gray-300 filter grayscale">
+                                            <img src="{{ Storage::url('app/public/assets/'. $produk->foto) }}" alt="Produk" class="h-20 w-20 rounded-lg object-cover border border-gray-300 filter grayscale">
                                         </div>
                                     </div>
 
@@ -129,7 +129,7 @@
                                             @endif
                                         </div>
                                         <div class="flex-shrink-0">
-                                            <img src="{{ Storage::url('assets/'. $produk->foto) }}" alt="Produk" class="h-20 w-20 rounded-lg object-cover border border-gray-300 {{ $produk->status === 'Habis' ? 'filter grayscale' : '' }}">
+                                            <img src="{{ Storage::url('app/public/assets/'. $produk->foto) }}" alt="Produk" class="h-20 w-20 rounded-lg object-cover border border-gray-300 {{ $produk->status === 'Habis' ? 'filter grayscale' : '' }}">
                                         </div>
                                     </div>
 
@@ -171,7 +171,7 @@
                                         <p class="text-gray-400 font-bold text-lg mt-2">Rp. {{ number_format($produk->harga_jual, 0, ',', '.') }}</p>
                                     </div>
                                     <div class="flex-shrink-0">
-                                        <img src="{{ Storage::url('assets/'. $produk->foto) }}" alt="Produk" class="h-20 w-20 rounded-lg object-cover border border-gray-300 filter grayscale">
+                                        <img src="{{ Storage::url('app/public/assets/'. $produk->foto) }}" alt="Produk" class="h-20 w-20 rounded-lg object-cover border border-gray-300 filter grayscale">
                                     </div>
                                 </div>
                             </div>

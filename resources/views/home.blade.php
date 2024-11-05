@@ -46,7 +46,7 @@
                 @forelse ($favorits as $kategori => $produkKategori)
                     @foreach ($produkKategori as $favorit)
                         <a href="{{ route('order-produk', $favorit->Outlet->uid) }}" class="w-48 hover:scale-105 transform transition-transform duration-300 flex flex-col items-center bg-gray-50 border border-gray-300 rounded-lg shadow-lg dark:bg-gray-800">
-                            <img src="{{ Storage::url('assets/' . $favorit->foto) }}" alt="{{ $favorit->nama_produk }}" class="w-full h-40 object-fill rounded-t-lg">
+                            <img src="{{ Storage::url('app/public/assets/' . $favorit->foto) }}" alt="{{ $favorit->nama_produk }}" class="w-full h-40 object-fill rounded-t-lg">
                             <div class="px-4 py-4 w-full">
                                 <p class="text-sm text-gray-600 dark:text-gray-400 text-left mb-1">{{ $favorit->Outlet->nama_outlet ?? 'Kosong' }}</p>
                                 <h1 class="w-32 text-lg font-semibold text-gray-800 dark:text-white truncate" title="{{ $favorit->nama_produk }}">{{ $favorit->nama_produk }}</h1>
@@ -68,7 +68,7 @@
                     @forelse ($promos as $promo)
                         <a  href="{{ route('order-produk', $promo->Outlet->uid) }}" class="relative flex gap-4 p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
                             <div class="absolute top-0 left-0 bg-orange-300 text-white px-2 py-1 text-xs rounded-br-lg">Promo</div>
-                            <img src="{{ Storage::url('assets/' . $promo->foto) }}" alt="{{ $promo->nama_produk }}" class="w-24 h-28 rounded-md object-cover shadow-sm">
+                            <img src="{{ Storage::url('app/public/assets/' . $promo->foto) }}" alt="{{ $promo->nama_produk }}" class="w-24 h-28 rounded-md object-cover shadow-sm">
                             <div class="flex flex-col justify-between">
                                 <h1 class="text-lg font-semibold text-gray-800 dark:text-white truncate" title="{{ $promo->nama_produk }}">{{ $promo->nama_produk }}</h1>
                                 <p class="text-sm text-gray-600 dark:text-gray-400">{{ $promo->Outlet->nama_outlet }}</p>
@@ -94,7 +94,7 @@
                         <a href="{{ route('order-produk', $diskon->Outlet->uid) }}" class="relative p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md hover:scale-105 transition-transform duration-300">
                             <div class="absolute top-0 left-0 bg-red-500 text-white px-2 py-1 text-xs rounded-br-lg">Diskon</div>
                             <div class="flex gap-4">
-                                <img src="{{ Storage::url('assets/' . $diskon->foto) }}" alt="{{ $diskon->nama_produk }}" class="w-20 h-20 rounded-md">
+                                <img src="{{ Storage::url('app/public/assets/' . $diskon->foto) }}" alt="{{ $diskon->nama_produk }}" class="w-20 h-20 rounded-md">
                                 <div class="mt-2">
                                     <h1 class="text-lg font-semibold">{{ $diskon->nama_produk }}</h1>
                                     <p class="text-xs text-gray-500 line-through">Rp. {{ number_format($diskon->harga_jual, 0, ',', '.') }}</p>

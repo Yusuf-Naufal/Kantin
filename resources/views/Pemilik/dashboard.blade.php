@@ -6,7 +6,7 @@
         <div class="flex flex-col md:flex-row gap-8 bg-white shadow-lg rounded-lg p-6">
             <!-- Image Section -->
             <div class="w-full md:w-1/3 flex justify-center items-center">
-                <img src="{{ Storage::url('assets/' . $outlet->foto) }}" alt="Outlet Image" class="w-full h-64 object-contain rounded-lg shadow-md border border-gray-200">
+                <img src="{{ Storage::url('app/public/assets/' . $outlet->foto) }}" alt="Outlet Image" class="w-full h-64 object-contain rounded-lg shadow-md border border-gray-200">
             </div>
 
             <!-- Outlet Details Section -->

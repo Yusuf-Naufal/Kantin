@@ -39,7 +39,7 @@
                     <h2 class="text-2xl font-semibold text-gray-800 dark:text-white border-b-2 border-gray-200 pb-2 mb-4">Foto Pemilik</h2>
                     <div class="grid grid-cols-1 gap-4">
                         @if ($pengajuan->User->foto && Storage::exists('assets/' . $pengajuan->User->foto))
-                            <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ Storage::url('assets/' . $pengajuan->User->foto) }}" alt="User">
+                            <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ Storage::url('app/public/assets/' . $pengajuan->User->foto) }}" alt="User">
                         @else
                             @if ($pengajuan->User->jenis_kelamin === 'Laki-laki')
                                 <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('public/assets/icon-male.png') }}" alt="User">
@@ -124,7 +124,7 @@
                     <div class="grid grid-cols-1 gap-4">
                         <a target="_blank" class="">
                             @if ($pengajuan->foto && Storage::exists('assets/' . $pengajuan->foto))
-                                <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ Storage::url('assets/' . $pengajuan->foto) }}" alt="Outlet">
+                                <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ Storage::url('app/public/assets/' . $pengajuan->foto) }}" alt="Outlet">
                             @else
                                 <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('public/assets/icon-outlet.png') }}" alt="Outlet">
                             @endif

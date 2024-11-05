@@ -4,7 +4,7 @@
 <aside id="sidebar" class="fixed top-0 left-0 w-64 h-screen bg-gray-800 text-white z-40 lg:relative lg:translate-x-0 lg:w-64 lg:overflow-y-auto transition-transform transform -translate-x-full">
     <div class="px-4 py-4 flex items-center justify-between border-b border-gray-700">
         <div class="flex gap-3 items-center">
-            <img src="{{ Storage::url('assets/' . $outlet->foto) }}" alt="Logo" class="h-12 w-12 rounded-full object-cover">
+            <img src="{{ Storage::url('app/public/assets/' . $outlet->foto) }}" alt="Logo" class="h-12 w-12 rounded-full object-cover">
             <div>
                 <p class="text-base font-semibold truncate">{{ $outlet->nama_outlet }}</p>
                 <p class="text-sm text-gray-400">{{ $outlet->pemilik }}</p>

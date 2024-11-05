@@ -119,7 +119,7 @@ class AuthController extends Controller
                         'google_id' => $google_user->getId(),
                         'role' => 'User',
                         'email_verified_at' => now(), // Auto-verify email
-
+                        'sku' => $this->generateUid(),
                     ]);
                 }
 

@@ -43,7 +43,7 @@
                                 data-id="{{ $produk->id }}"
                                 onclick="addToDetail('{{ $produk->id }}', '{{ $produk->nama_produk }}')">
                                 <div style="height: 128px" class="relative w-full h-32 bg-white items-center flex justify-center">
-                                    <img src="{{ Storage::url('assets/' . $produk->foto) }}" class="w-full h-full object-contain">
+                                    <img src="{{ Storage::url('app/public/assets/' . $produk->foto) }}" class="w-full h-full object-contain">
                                     
                                     @if($produk->status === 'Habis')
                                     <!-- Watermark for "Habis" -->
