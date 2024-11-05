@@ -13,6 +13,7 @@
 
     {{-- TAILWIND SCRIPT  --}}
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="/build/assets/app-CFG0kKgu.js "></script>
     {{-- SWEETALERT SCRIP --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>

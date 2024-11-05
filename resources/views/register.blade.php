@@ -6,7 +6,11 @@
     <title>Register</title>
 
     {{-- TAILWIND CSS  --}}
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
+
+    <link rel="stylesheet" href="/build/assets/app-DMXIxZ_f.css">
+    <link rel="stylesheet" href="/build/assets/app-CW2gkweu.css">
+
     {{-- FLOWBITE CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
 </head>
@@ -61,7 +65,7 @@
 
 
 
-
+    <script src="/build/assets/app-CFG0kKgu.js "></script>
 
     {{-- BAGIAN SCRIPT --}}
     <script>

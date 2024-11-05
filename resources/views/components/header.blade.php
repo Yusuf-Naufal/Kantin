@@ -8,8 +8,12 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" href="{{ asset('assets/logoMyKantin.png') }}" type="image/x-icon">
 
+    <link rel="stylesheet" href="/build/assets/app-DMXIxZ_f.css">
+    <link rel="stylesheet" href="/build/assets/app-CW2gkweu.css">
+
     {{-- TAILWIND CSS --}}
-    @vite('resources/css/app.css')
+    {{-- {{-- @vite('resources/css/app.css') --}}
+
 
     {{-- FLOWBITE CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />

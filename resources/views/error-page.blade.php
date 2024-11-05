@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error</title>
 
-    {{-- TAILWIND CSS  --}}
-    @vite('resources/css/app.css')
+    <link rel="stylesheet" href="/build/assets/app-DMXIxZ_f.css">
+    <link rel="stylesheet" href="/build/assets/app-CW2gkweu.css">
+
+    {{-- TAILWIND CSS 
+    {{-- @vite('resources/css/app.css') --}}
+
+    <link rel="stylesheet" href="/build/assets/app-DMXIxZ_f.css">
+    <link rel="stylesheet" href="/build/assets/app-CW2gkweu.css">
+
+
     {{-- FLOWBITE CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
 </head>
@@ -32,5 +40,6 @@
 
     {{-- TAILWIND SCRIPT  --}}
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="/build/assets/app-CFG0kKgu.js "></script>
 </body>
 </html>

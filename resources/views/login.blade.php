@@ -6,7 +6,10 @@
     <title>Login</title>
 
     {{-- TAILWIND CSS  --}}
-    @vite('resources/css/app.css')
+    {{-- @vite('resources/css/app.css') --}}
+
+<link rel="stylesheet" href="/build/assets/app-DMXIxZ_f.css">
+    <link rel="stylesheet" href="/build/assets/app-CW2gkweu.css">
     {{-- FLOWBITE CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"  rel="stylesheet" />
 </head>
@@ -84,6 +87,8 @@
     
     {{-- FLOWBITE SCRIPT --}}
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script src="/build/assets/app-CFG0kKgu.js "></script>
 
     {{-- SWEETALERT SCRIP --}}
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
