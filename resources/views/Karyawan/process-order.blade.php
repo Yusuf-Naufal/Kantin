@@ -31,9 +31,9 @@
                                 <!-- Order Type Image -->
                                 <div class="flex justify-start">
                                     @if ($order->metode == 'Delivery')
-                                        <img src="{{ asset('assets/icon-delivery.png') }}" alt="Order Type" class="w-20 h-20 rounded-lg shadow-md object-fill">
+                                        <img src="{{ asset('public/assets/icon-delivery.png') }}" alt="Order Type" class="w-20 h-20 rounded-lg shadow-md object-fill">
                                     @else
-                                        <img src="{{ asset('assets/icon-pickup.png') }}" alt="Order Type" class="w-20 h-20 rounded-lg shadow-md object-fill">
+                                        <img src="{{ asset('public/assets/icon-pickup.png') }}" alt="Order Type" class="w-20 h-20 rounded-lg shadow-md object-fill">
                                     @endif
                                 </div>
                                 
@@ -147,7 +147,7 @@
                                                             <div class="flex items-center justify-between text-gray-700 dark:text-gray-300 font-sans font-light">
                                                                 <span class="text-base font-bold">Metode Order:</span>
                                                                 <div class="flex items-center gap-2 ml-2 p-2 rounded-lg bg-green-50 transition-shadow duration-200 shadow-sm hover:shadow-md">
-                                                                    <img src="{{ asset('assets/icon-pickup.png') }}" class="w-8 h-8 p-1 shadow-sm" alt="PickUp Icon">
+                                                                    <img src="{{ asset('public/assets/icon-pickup.png') }}" class="w-8 h-8 p-1 shadow-sm" alt="PickUp Icon">
                                                                     <span class="text-sm font-medium tracking-wide text-gray-800 dark:text-gray-100">Pick Up</span>
                                                                 </div>
                                                             </div>
@@ -161,7 +161,7 @@
                                                             <div class="flex items-center justify-between text-gray-700 dark:text-gray-300 font-sans font-light">
                                                                 <span class="text-base font-bold">Metode Order:</span>
                                                                 <div class="flex items-center gap-2 ml-2 p-2 rounded-lg bg-green-50 transition-shadow duration-200 shadow-sm hover:shadow-md">
-                                                                    <img src="{{ asset('assets/icon-delivery.png') }}" class="w-8 h-8 p-1 shadow-sm" alt="Delivery Icon">
+                                                                    <img src="{{ asset('public/assets/icon-delivery.png') }}" class="w-8 h-8 p-1 shadow-sm" alt="Delivery Icon">
                                                                     <span class="text-sm font-medium tracking-wide text-gray-800 dark:text-gray-100">Delivery</span>
                                                                 </div>
                                                             </div>

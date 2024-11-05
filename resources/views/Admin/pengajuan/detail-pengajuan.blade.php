@@ -42,11 +42,11 @@
                             <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ Storage::url('assets/' . $pengajuan->User->foto) }}" alt="User">
                         @else
                             @if ($pengajuan->User->jenis_kelamin === 'Laki-laki')
-                                <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('assets/icon-male.png') }}" alt="User">
+                                <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('public/assets/icon-male.png') }}" alt="User">
                             @elseif ($pengajuan->User->jenis_kelamin === 'Perempuan')
-                                <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('assets/icon-female.png') }}" alt="User">
+                                <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('public/assets/icon-female.png') }}" alt="User">
                             @else
-                            <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('assets/icon-profile.png') }}" alt="User">
+                            <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('public/assets/icon-profile.png') }}" alt="User">
                             @endif
                         @endif
                     </div>
@@ -126,7 +126,7 @@
                             @if ($pengajuan->foto && Storage::exists('assets/' . $pengajuan->foto))
                                 <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ Storage::url('assets/' . $pengajuan->foto) }}" alt="Outlet">
                             @else
-                                <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('assets/icon-outlet.png') }}" alt="Outlet">
+                                <img class="mx-auto w-1/2 object-contain h-auto rounded-md" src="{{ asset('public/assets/icon-outlet.png') }}" alt="Outlet">
                             @endif
                         </a>
                     </div>

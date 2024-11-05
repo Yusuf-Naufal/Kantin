@@ -76,9 +76,9 @@
                                     <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ Storage::url('assets/' . $user->foto) }}" alt="User">
                                 @else
                                     @if ($user->jenis_kelamin === 'Laki-laki')
-                                        <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ asset('assets/icon-male.png') }}" alt="User">
+                                        <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ asset('public/assets/icon-male.png') }}" alt="User">
                                     @else
-                                        <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ asset('assets/icon-female.png') }}" alt="User">
+                                        <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ asset('public/assets/icon-female.png') }}" alt="User">
                                     @endif
                                 @endif
                             </a>

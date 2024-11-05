@@ -22,7 +22,7 @@
             <div id="status-user-berhasil" class="text-center md:max-w-sm">
                 <h2 class="text-3xl font-bold text-green-400 mb-4">Pengajuan Berhasil!</h2>
                 <div class="w-full items-center flex justify-center my-2">
-                    <img src="{{ asset('assets/icon-outlet-pending.png') }}" alt="daftar-outlet">
+                    <img src="{{ asset('public/assets/icon-outlet-pending.png') }}" alt="daftar-outlet">
                 </div>
                 <p class="text-gray-700 mb-6">
                     Status outlet Anda saat ini belum disetujui. Mohon tunggu persetujuan dari Admin.
@@ -135,7 +135,7 @@
             <div id="status-user-berhasil" class="text-center md:max-w-sm">
                 <h2 class="text-3xl font-bold text-red-400 mb-4">Pengajuan Ditolak!</h2>
                 <div class="w-full items-center flex justify-center my-2">
-                    <img src="{{ asset('assets/icon-outlet-ditolak.png') }}" alt="daftar-outlet">
+                    <img src="{{ asset('public/assets/icon-outlet-ditolak.png') }}" alt="daftar-outlet">
                 </div>
                 <p class="text-gray-700 mb-6">
                     Outlet yang anda ajukan ditolak. Silahkan Daftar dilain hari...
@@ -154,7 +154,7 @@
                 
                 <h2 class="text-3xl font-bold text-red-600 mb-4">Peringatan!</h2>
                 <div class="w-full items-center flex justify-center my-2">
-                    <img src="{{ asset('assets/icon-outlet-daftar.png') }}" alt="daftar-outlet">
+                    <img src="{{ asset('public/assets/icon-outlet-daftar.png') }}" alt="daftar-outlet">
                 </div>
                 <p class="text-gray-700 mb-6">
                     Anda belum terdaftar pada outlet manapun! Silakan mendaftar terlebih dahulu.

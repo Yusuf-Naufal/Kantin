@@ -13,7 +13,7 @@
 
     <div style="max-width: 680px;" class="mx-auto w-full flex justify-center items-center flex-col py-6 px-3 mt-14 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg">
         <div data-aos="zoom-in" class="w-full flex items-center justify-center mb-6 relative">
-            <img class="w-full h-auto max-w-xl" src="{{ asset('assets/waiting-order.png') }}" alt="Waiting for Order">
+            <img class="w-full h-auto max-w-xl" src="{{ asset('public/assets/waiting-order.png') }}" alt="Waiting for Order">
             
 
             
@@ -106,7 +106,7 @@
                     <span class="text-base font-bold">Metode Order:</span>
                     
                     <div class="flex items-center gap-2 ml-2 p-2 rounded-lg bg-green-50 transition-shadow duration-200 shadow-sm hover:shadow-md">
-                        <img src="{{ asset('assets/icon-pickup.png') }}" class="w-8 h-8 p-1 shadow-sm" alt="PickUp Icon">
+                        <img src="{{ asset('public/assets/icon-pickup.png') }}" class="w-8 h-8 p-1 shadow-sm" alt="PickUp Icon">
                         <span class="text-sm font-medium tracking-wide text-gray-800 dark:text-gray-100">Pick Up</span>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                     <span class="text-base font-bold">Metode Order:</span>
                     
                     <div class="flex items-center gap-2 ml-2 p-2 rounded-lg bg-green-50 transition-shadow duration-200 shadow-sm hover:shadow-md">
-                        <img src="{{ asset('assets/icon-delivery.png') }}" class="w-8 h-8 p-1 shadow-sm" alt="PickUp Icon">
+                        <img src="{{ asset('public/assets/icon-delivery.png') }}" class="w-8 h-8 p-1 shadow-sm" alt="PickUp Icon">
                         <span class="text-sm font-medium tracking-wide text-gray-800 dark:text-gray-100">Delivery</span>
                     </div>
                 </div>

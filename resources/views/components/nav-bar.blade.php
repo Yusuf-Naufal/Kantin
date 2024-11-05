@@ -1,7 +1,7 @@
 <nav class="dark:bg-gray-900 fixed w-full z-20 top-0 dark:border-gray-600 shadow-md" style="background: white">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2 px-3">
         <a href="{{ route('home') }}" class="flex items-center space-x-2 rtl:space-x-reverse">
-            <img src="{{ asset('assets/logoMyKantin.png') }}" class="h-8" alt="Logo">
+            <img src="{{ asset('public/assets/logoMyKantin.png') }}" class="h-8" alt="Logo">
             <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">MyKantin</span>
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -16,11 +16,11 @@
                             <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ Storage::url('assets/' . auth()->user()->foto) }}" alt="User">
                         @else
                             @if (auth()->user()->jenis_kelamin === 'Laki-laki')
-                                <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ asset('assets/icon-male.png') }}" alt="User">
+                                <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ asset('public/assets/icon-male.png') }}" alt="User">
                             @elseif (auth()->user()->jenis_kelamin === 'Perempuan')
-                                <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ asset('assets/icon-female.png') }}" alt="User">
+                                <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ asset('public/assets/icon-female.png') }}" alt="User">
                             @else
-                                <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ asset('assets/icon-profile.png') }}" alt="User">
+                                <img class="w-10 h-10 rounded-full object-cover border-2 border-gray-300 dark:border-gray-500 shadow-md" src="{{ asset('public/assets/icon-profile.png') }}" alt="User">
                             @endif
                         @endif
                 </button>

@@ -86,7 +86,7 @@
                                 @if ($produk->foto && Storage::exists('assets/' . $produk->foto))
                                     <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ Storage::url('assets/' . $produk->foto) }}" alt="Produk">
                                 @else
-                                    <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ asset('assets/produk.png') }}" alt="Produk">
+                                    <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ asset('public/assets/produk.png') }}" alt="Produk">
                                 @endif
                             </a>
                         </th>

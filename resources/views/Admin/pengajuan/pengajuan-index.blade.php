@@ -63,7 +63,7 @@
                             @forelse ($pengajuans as $pengajuan)
                             <tr class="bg-white dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600" data-status="{{ $pengajuan->status }}">
                                 <td class="px-6 py-4">
-                                    <img class="object-contain w-20 h-20 rounded-md" src="{{ $pengajuan->foto ? Storage::url('assets/' . $pengajuan->foto) : asset('assets/icon-outlet.png') }}" alt="Outlet">
+                                    <img class="object-contain w-20 h-20 rounded-md" src="{{ $pengajuan->foto ? Storage::url('assets/' . $pengajuan->foto) : asset('public/assets/icon-outlet.png') }}" alt="Outlet">
                                 </td>
                                 <td class="px-6 py-4">{{ $pengajuan->nama_outlet }}</td>
                                 <td class="px-6 py-4">{{ $pengajuan->User->name }}</td>

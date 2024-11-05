@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title }}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="icon" href="{{ asset('assets/logoMyKantin.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('public/assets/logoMyKantin.png') }}" type="image/x-icon">
 
     <link rel="stylesheet" href="/build/assets/app-DMXIxZ_f.css">
     <link rel="stylesheet" href="/build/assets/app-CW2gkweu.css">

@@ -329,15 +329,20 @@ class DashboardController extends Controller
     // HOME DASHBOARD 
     public function HomeDashboard()
     {
-
         $produkPromo = Produk::where('status', 'Promo')->get();
 
         $produkDiskon = Produk::where('status', 'Diskon')->get();
 
         $produkFavorit = Produk::with(['DetailTransaksi', 'Kategori', 'Outlet'])
-            ->select('produk.*', DB::raw('SUM(detail_transaksi.jumlah_barang) as total_barang'))
+            ->select(
+                'produk.id',
+                'produk.id_kategori',
+                'produk.nama_produk',
+                'produk.sku',
+                DB::raw('SUM(detail_transaksi.jumlah_barang) as total_barang')
+            )
             ->join('detail_transaksi', 'produk.id', '=', 'detail_transaksi.id_produk')
-            ->groupBy('produk.id')
+            ->groupBy('produk.id', 'produk.id_kategori', 'produk.nama_produk', 'produk.sku')
             ->having('total_barang', '>', 100)
             ->orderBy('id_kategori')
             ->orderBy('total_barang', 'desc')
@@ -347,7 +352,6 @@ class DashboardController extends Controller
             ->map(function ($items) {
                 return $items->take(2);
             });
-
 
         return view('home', [
             'title' => 'My Kantin',

@@ -66,7 +66,7 @@
                                 @if ($outlet->foto && Storage::exists('assets/' . $outlet->foto))
                                     <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ Storage::url('assets/' . $outlet->foto) }}" alt="Outlet">
                                 @else
-                                    <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ asset('assets/icon-outlet.png') }}" alt="Outlet">
+                                    <img class="object-contain w-20 h-20 sm:w-16 sm:h-16 md:w-20 md:h-20 min-w-full rounded-md" src="{{ asset('public/assets/icon-outlet.png') }}" alt="Outlet">
                                 @endif
                             </a>
                         </th>
